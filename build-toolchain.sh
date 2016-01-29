@@ -92,12 +92,11 @@ if [ "x$is_ppa_release" != "xyes" ]; then
                     --with-cloog=$BUILDDIR_NATIVE/host-libs/usr
                     --with-libelf=$BUILDDIR_NATIVE/host-libs/usr "
 
-  BINUTILS_CONFIG_OPTS=" --build=$BUILD --host=$HOST_NATIVE "
+  BINUTILS_CONFIG_OPTS=" "
 
-  NEWLIB_CONFIG_OPTS=" --build=$BUILD --host=$HOST_NATIVE "
+  NEWLIB_CONFIG_OPTS=" "
 
-  GDB_CONFIG_OPTS=" --build=$BUILD --host=$HOST_NATIVE
-                    --with-libexpat-prefix=$BUILDDIR_NATIVE/host-libs/usr "
+  GDB_CONFIG_OPTS=" --with-libexpat-prefix=$BUILDDIR_NATIVE/host-libs/usr "
 fi
 
 
