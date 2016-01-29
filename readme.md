@@ -1,3 +1,22 @@
+ARM Embedded Toolchain 2014q1 for Arduino on Raspberry Pi
+---------------------------------------------------------
+
+This copy of the 2014q1 "arm-none-eabi-gcc" toolchain used by Arduino is slightly modified to be able to compile on Raspberry Pi.
+
+To build, use these commands:
+
+    cd src
+    find -name '*.tar.*' | xargs -I% tar -xf %
+    cd zlib-1.2.5
+    patch -p1 <../zlib-1.2.5.patch
+    cd ../../
+    ./build-prerequisites.sh --skip_mingw32
+    ./build-toolchain.sh --skip_mingw32
+
+
+Original README
+---------------
+
 GNU Tools for ARM Embedded Processors
 Version: 4.8
 
