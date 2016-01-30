@@ -13,6 +13,12 @@ To build, use these commands:
     ./build-prerequisites.sh --skip_mingw32
     ./build-toolchain.sh --skip_mingw32
 
+You *must* build natively on a Raspberry Pi, or the board you wish to use.  These changes to the build scripts remove the ability to "Canadian" cross compile.  For more details, see this:
+
+https://github.com/arduino/arduino-builder/issues/105#issuecomment-176704946
+
+Building on a Raspberry Pi 1 Model B with Sandisk Ultra SD card takes approximately 41 hours.  You will need about 11 GB of free space.
+
 
 Original README
 ---------------
