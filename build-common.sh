@@ -310,9 +310,9 @@ release_month=${RELEASEDATE:4:2}
 RELEASEVER=2014q1
 
 RELEASE_FILE=release.txt
-README_FILE=readme.txt
+README_FILE=readme.md
 LICENSE_FILE=license.txt
-SAMPLES_DOS_FILES=$SAMPLES/readme.txt
+SAMPLES_DOS_FILES=$SAMPLES/readme.md
 BUILD_MANUAL_FILE=How-to-build-toolchain.pdf
 GCC_VER=`cat $SRCDIR/$GCC/gcc/BASE-VER`
 GCC_VER_NAME=`echo $GCC_VER | cut -d'.' -f1,2 | sed -e 's/\./_/g'`
