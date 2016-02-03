@@ -1,0 +1,2 @@
+87d030dda8b7a673721835bee3958a37 *gcc-arm-none-eabi-4_8-2014q1-20160201-linux.tar.bz2
+2ed7c0bdee7554d2d358022da633ee14 *gcc-arm-none-eabi-4_8-2014q1-20160201-src.tar.bz2
