@@ -266,8 +266,8 @@ $SRCDIR/$NEWLIB_NANO/configure  \
     --enable-newlib-global-atexit         \
     --disable-nls
 
-make -j$JOBS
-make install
+make -j$JOBS MAKEINFO=true
+make install MAKEINFO=true
 
 popd
 restoreenv
