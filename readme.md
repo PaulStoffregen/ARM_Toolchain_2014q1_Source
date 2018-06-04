@@ -7,6 +7,7 @@ To build, use these commands:
 
     cd src
     find -name '*.tar.*' | xargs -I% tar -xf %
+    patch -p1 < gmp-4.3.2.patch
     cd zlib-1.2.5
     patch -p1 <../zlib-1.2.5.patch
     cd ../../
